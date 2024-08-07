@@ -1,5 +1,6 @@
 package controllers;
 
+
 import play.mvc.*;
 
 /**
@@ -15,7 +16,7 @@ public class HomeController extends Controller {
      * <code>GET</code> request with a path of <code>/</code>.
      */
     public Result index() {
-        return ok("hola soy Rocío");
+        return ok("<html><body><h1>Hola, soy Rocio</h1></body></html>").as("text/html");
     }
 
 }
